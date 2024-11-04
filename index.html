@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eu">
+    <head>
+        <title>homework3</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form class="form">
+            <div class="container">
+                <h2 class="titleForm">Registration form</h2>
+                <div class="userBlock">
+                    <img class="img" src="./img/avatar.svg" height="20px" width="20px">
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="userBlock">
+                    <img class="img" src="./img/email.svg" height="20px" width="20px">
+                    <input type="email" placeholder="Email addres">
+                </div>
+                <div class="userBlock">
+                    <img class="img" src="./img/password.svg" height="20px" width="20px">
+                    <div class="passwordBlock">
+                        <input type="password" placeholder="Password">
+                        <input type="password" placeholder="Confirm password">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="titleForm">Personal details</h2>
+                <div class="personalContainer">
+                    <input type="text" placeholder="First name">
+                    <input type="text" placeholder="Last name">
+                    <input type="text" list="options" value="Male">
+                    <datalist id="options">
+                        <option value="Male"></option>
+                        <option value="Female"></option>
+                    </datalist>
+                    <input type="date">
+                </div>
+            </div>
+            <div class="container checkboxBox">
+                <input type="checkbox">
+                <span>I want to receive mews and special offers</span>
+                <br>
+                <input type="checkbox">
+                <span>I agree with the Rerms and Conditions</span>
+            </div>
+            <div class="container buttonBox">
+                <button class="buttonSub">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+body{
+    background-color: aliceblue;
+}
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    border: 1px solid rgb(80, 79, 79);
+    box-shadow: 0 0 10px 0 black;
+    width: 800px;
+    height: 400px;
+    background-color: aliceblue;
+}
+.container{
+    position: relative;
+    width: 400px;
+}
+.img{
+    margin: auto 0;
+    margin-right: 5px;
+}
+.userBlock{
+    display: flex;
+}
+.passwordBlock{
+    display: flex;
+}
+input[type="text"], input[type="password"], input[type="email"],
+input[type="date"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 90%;
+    margin: 10px;
+    padding: 5px;
+    background-color: aliceblue;
+}
+.personalContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.buttonSub{
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(125, 150, 125);
+    border: none;
+    text-transform: uppercase;
+
+}
+.buttonBox{
+    display: flex;
+    justify-content: end;
+    margin-top: auto;
+}
+
+@media (min-width: 600px) and (max-width: 900px){
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 500px;
+    }
+    .buttonSub{
+        position: static;
+    }
+    .buttonBox{
+        display: flex;
+        justify-content: end;
+        margin-top: auto;
+    }
+    .checkboxBox{
+        margin: 20px 0;
+    }
+}
+@media (max-width: 600px){
+    .form{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 650px;
+    }
+    .buttonSub{
+        position: static;
+    }
+    .buttonBox{
+        display: flex;
+        justify-content: end;
+        margin-top: auto;
+    }
+    .checkboxBox{
+        margin: 20px 0;
+    }
+    .passwordBlock{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .personalContainer{
+        display: flex;
+        flex-direction: column;
+    }
+}
